@@ -1,6 +1,54 @@
 # AlanasProject0![Screen Shot 2022-03-03 at 9 18 07 AM](https://user-images.githubusercontent.com/98920165/156582829-818fd244-4866-4643-a03a-75e587ecf96c.png)
+
+
 Thanks for looking at my code for Tamagotchi! To Play the game, you can go to *insert website*
 
+Say hello to your new tamagotchi pet. You can name your pet any name you like. Hungry, sleepiness, bordeom. These points range from 0-10. 10 being the lowest which can cause you to have to start over and 0 being the highest which will make your Tamagotchi grow and be happy. As your pet grows your pets age will increase.
+
+*Name your pet
+
+*Age increases as the pet grows
+
+*Feed the tamagotchi 
+
+*Clean the tamagotchi
+
+*Play with the tamagotchi
+
+*Turn off the lights
+
+
+                *Tamagotchis mood points*
+
+Hungry:               
+-If hungriness is at 0, then the tamagotchi is full
+-If hungriness is at 5, your tamagotchi is hungry
+-If hungriness drops to 10, you will have to start over
+
+Sleepiness:
+-If sleepiness is at 0, then the tamagotchi is asleep
+-If tired is at 5, then the tamagotchi is tired
+-If tired drops to 10, you will have to start over
+
+Bordeom:
+-If happiness is at 0, then the tamagotchi is happy
+-If happiness is at 5, the the tamagotchi is bored
+-If happiness hits to 10, you will have to start over
+
+
+
+
+<!-- Display the following metrics for your pet: 
+ * Hunger (1-10 scale)
+ * Sleepiness (1-10 scale)
+ * Boredom (1-10 scale)
+ * Age
+* Add buttons to the screen to feed your pet, turn off the lights, and play with your pet.
+* Add the ability to name your pet.
+* Style the page.
+* Increase your pet's age every x minutes
+* Increase your pet's Hunger, Sleepiness, and Bored metrics on an interval of your choosing.
+* You pet should die if Hunger, Boredom, or Sleepiness hits 10.
 
 
 # AlanasProject0![GA logo](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
@@ -12,7 +60,7 @@ Let's start out with something fun—**a game!**
 
 Everyone will get a chance to **be creative**, and work through some really **tough programming challenges**.
 
-**You will be working individually for this project**, but we'll be guiding you along the process and helping as you go. Show us what you've got!
+**You will be working individually for this project**, but we'll be guiding you along the process and helping as you go. Show us what you've got! -->
 
 
 ---
