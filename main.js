@@ -21,7 +21,6 @@ const sleepinessEl = document.getElementById("btn-sleepiness");
 const boredomEl = document.getElementById("btn-boredom");
 const lightsEl = document.getElementById("btn-lights");
 
-
 let count = 0;
 let myCounter = null;
 
@@ -43,89 +42,3 @@ function handleHungerClick() {
 startEl.addEventListener("click" , handleStartClick);
 
 
-function pHunger () {
-//     console.log(pHunger);
-
-myCounter = setInterval(function(){
-    count++
-    stopMyCount ()
-    myCountO.innerText= num;
-},1000);
-}
-
-function stopMyCount() {
-    if (num >=4){
-        clearInterval(myCount)
-        count = 0;
-    }
-}
-
-hungerEl.addEventListener("click" , handleHungerClick);
-
-
-// function pSleepiness () {
-//     //     console.log(pSleepiness);
-    
-//     myCounter = setInterval(function(){
-//         count++
-//         stopMyCount ()
-//         myCountO.innerText= num;
-//     },1000);
-//     }
-    
-//     function stopMyCount() {
-//         if (num >=4){
-//             clearInterval(myCount)
-//             count = 0;
-//         }
-//     }
-    
-//     sleepinessEl.addEventListener("click" , handleSleepinessClick);
-
-
-    function pBoredom () {
-        //     console.log(pBoredom);
-        
-        myCounter = setInterval(function(){
-            count++
-            stopMyCount ()
-            myCountO.innerText= num;
-        },1000);
-        }
-        
-        function stopMyCount() {
-            if (num >=4){
-                clearInterval(myCount)
-                count = 0;
-            }
-        }
-        
-        sleepinessEl.addEventListener("click" , handleBoredomClick)
-    
-
-
-//     intervalID = setInterval(function () {
-
-//             count += 1;
-//             count.textContent = count;
-//     }, 1000);
-// });
-
-// btnPause.addEventListener("click" , function () {
-//     clearInterval(intervalID);
-// });
-
-
-
-// document.getElementById("abby").addEventListener("submit" , getName);
-
-// event listener
-// class Tamagotchi {
-//     constructor(hunger, sleepiness, boredom, lights) {
-//         this.hunger = hunger;
-//         this.sleepiness = sleepiness;
-//         this.boredom= boredom;
-//         this.lights= lights;
-//     }
-
-// }
