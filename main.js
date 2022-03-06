@@ -32,13 +32,38 @@ function handleStartClick(){
 //     console.log(count);
     }, 1000);
 };
+startEl.addEventListener("click" , handleStartClick);
 
-function handleHungerClick() {
-    clearInterval(myCounter);
-    count = 0;
+
+function handleHungerClick(){
+    myCounter = setInterval(function(){
+    count++;
     countEl.innerText = "Count: " + count;
+
+    }, 1000);
 };
 
-startEl.addEventListener("click" , handleStartClick);
+hungerEl.addEventListener("click" , handleHungerClick);
+
+
+function handleBoredomClick(){
+    myCounter = setInterval(function(){
+    count++;
+    countEl.innerText = "Count: " + count;
+
+    }, 1000);
+};
+
+boredomEl.addEventListener("click" , handleBoredomClick);
+
+
+
+
+
+// function pHunger(){
+
+// }
+
+
 
 
