@@ -18,7 +18,7 @@ const age = document.getElementById("age");
 
 
 let ageCounter = null;
-let agePet = 0;
+let agePet =
 
 //this function will increase the pets age as it grows
 
