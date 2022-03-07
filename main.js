@@ -1,11 +1,6 @@
 
  
 
-getName = (e) => {
-    e.preventDefault()
-    console.log(e.target.name.value);
-console.log(e)
-}
 
 // //Increase your pet's age every x minutes
 // Increase your pet's Hunger, Sleepiness, and Bored metrics on an interval of your choosing.
@@ -117,8 +112,8 @@ function handleSleepinessClick(){
 sleepinessEl.addEventListener("click" , handleSleepinessClick);
 
 
-
-// document.getElementById("abby").addEventListener("submit" , getName);
+let getName= null
+document.getElementById("abby").addEventListener("submit" , getName);
 
 
 
