@@ -18,6 +18,22 @@ const hungerEl = document.getElementById("btn-hunger");
 const sleepinessEl = document.getElementById("btn-sleepiness");
 const boredomEl = document.getElementById("btn-boredom");
 const lightsEl = document.getElementById("btn-lights");
+const age = document.getElementById("age");
+
+
+let ageCounter = null;
+
+//this function will increase the pets age as it grows
+
+function ageCount() {
+    ageCounter = setInterval(function(){
+        agePet++;
+        age.innerText = "Age: " + agePet;
+        if (hunger == 10 || bore == 10 || sleep ==10) {
+
+        }
+    },3000);
+}
 
 let count = 0;
 let myCounter = null;
@@ -91,7 +107,7 @@ sleepinessEl.addEventListener("click" , handleSleepinessClick);
 
 
 
-document.getElementById("abby").addEventListener("submit" , getName);
+// document.getElementById("abby").addEventListener("submit" , getName);
 
 
 
