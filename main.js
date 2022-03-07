@@ -45,17 +45,17 @@ function handleStartClick(){
 };
 
 // adding on click listeners to each element will enable the user to be able to click the 
-//button 
+//button. The start button will start the count from 0
 startEl.addEventListener("click" , handleStartClick);
 
-
+// when the stop button is clicked your timer will stop and reset to 0
 function handleStopClick() {
     clearInterval(myCounter);
     count = 0;
     countEl.innerText = "Count: " + count;
 };
 
-
+//when the hunger button is clicked, your count will start at 0
 function handleHungerClick(){
     myCounter = setInterval(function(){
     count++;
@@ -72,7 +72,7 @@ stopEl.addEventListener("click" , handleStopClick);
 
 hungerEl.addEventListener("click" , handleHungerClick);
 
-
+//when the boredom button is clicked, your count will start at 0
 function handleBoredomClick(){
     myCounter = setInterval(function(){
     count++;
@@ -85,21 +85,7 @@ function handleBoredomClick(){
 //button 
 boredomEl.addEventListener("click" , handleBoredomClick);
 
-
-function handleHungerClick(){
-    myCounter = setInterval(function(){
-    count++;
-    countEl.innerText = "Count: " + count;
-
-    }, 1000);
-};
-
-// adding on click listeners to each element will enable the user to be able to click the 
-//button 
-
-hungerEl.addEventListener("click" , handleHungerClick);
-
-
+//when the sleepiness button is clicked, your count will start at 0
 function handleSleepinessClick(){
     myCounter = setInterval(function(){
     count++;
@@ -112,7 +98,7 @@ function handleSleepinessClick(){
 //button 
 sleepinessEl.addEventListener("click" , handleSleepinessClick);
 
-
+//this variable is named petName for the user to submit a name for the tamagotchi
 const petName = document.getElementById("petName");
 petName.addEventListener("submit" , (e) => {
         e.preventDefault();
