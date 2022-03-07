@@ -18,6 +18,7 @@ const age = document.getElementById("age");
 
 
 let ageCounter = null;
+let agePet = 0;
 
 //this function will increase the pets age as it grows
 
@@ -112,9 +113,12 @@ function handleSleepinessClick(){
 sleepinessEl.addEventListener("click" , handleSleepinessClick);
 
 
-let getName= null
-document.getElementById("abby").addEventListener("submit" , getName);
+const petName = document.getElementById("petName");
+petName.addEventListener("submit" , (e) => {
+        e.preventDefault();
+});
 
+console.log(petName)
 
 
 
