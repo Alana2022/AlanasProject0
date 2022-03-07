@@ -20,3 +20,7 @@ body {
     color: violet;
 
   }
+
+  img {
+      border-radius: 50%;
+  }
