@@ -14,6 +14,7 @@ console.log(e)
 // this variable will connect the DOM elements from HTML
 const countEl = document.getElementById("my-count");
 const startEl = document.getElementById("btn-start");
+const stopEl = document.getElementById("btn-stop");
 const hungerEl = document.getElementById("btn-hunger");
 const sleepinessEl = document.getElementById("btn-sleepiness");
 const boredomEl = document.getElementById("btn-boredom");
@@ -52,6 +53,13 @@ function handleStartClick(){
 startEl.addEventListener("click" , handleStartClick);
 
 
+function handleStopClick() {
+    clearInterval(myCounter);
+    count = 0;
+    countEl.innerText = "Count: " + count;
+};
+
+
 function handleHungerClick(){
     myCounter = setInterval(function(){
     count++;
@@ -59,6 +67,9 @@ function handleHungerClick(){
 
     }, 1000);
 };
+
+stopEl.addEventListener("click" , handleStopClick);
+
 
 // adding on click listeners to each element will enable the user to be able to click the 
 //button 
