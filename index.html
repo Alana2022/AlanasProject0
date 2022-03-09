@@ -9,18 +9,27 @@
 
     <script src="main.js" defer async></script>
     <link rel="stylesheet" href="style.css">
+
+
 </head>
-
-
 
 <body>
     <img src="https://tamagotchi.com/wp-content/uploads/violetchi.jpg" alt="tamagotchi pet"/>
     
     <h1>Meet Your New Tamagotchi Pet</h1>
+    <h1 id="showName">Your Name Appears here.</h1>
 
-    <div id="pet-name">
-        <p>Name:</p>
-    </div>
+
+
+
+
+    <form
+        id="petName" class="form" onSubmit="nameSubmit(event)">
+        <label form="petName">Name:</label>
+        <input type="text" name="petName" id="petName">
+        <button type="submit">I'm so excited to meet you!</button>
+        
+    </form>
 
     <button id="btn-start">Start</button>
 
@@ -38,12 +47,6 @@
     <button id="btn-lights On">Lights</button>
     
     </div>
-
-    <form id="petName">
-        <label for="petname">Name Your Pet:</label><br>
-        <input type="text" name="petname" id="petname">
-        <input type="submit" value="Submit">
-    </form>
 
     <footer>
         <a
