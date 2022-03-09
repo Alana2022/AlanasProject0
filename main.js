@@ -1,6 +1,17 @@
 
- 
-
+ //below I am creating a Class for the tamagotchi and then I will instantiate passingin the name as "Abby" and console log to verify that my code my printed correctly.  
+ //The metrics for hunger, sleepiness and boredom will start at 1.
+class Tamagotchi {
+    constructor(name) {
+        this.name = name;
+        this.age = 0;
+        this.hunger= 1;
+        this.sleepiness= 1;
+        this.boredom= 1;
+    }
+}
+let Abby = new Tamagotchi("Abby");
+// console.log("Abby");
 
 // //Increase your pet's age every x minutes
 // Increase your pet's Hunger, Sleepiness, and Bored metrics on an interval of your choosing.

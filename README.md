@@ -1,9 +1,9 @@
 # AlanasProject0![Screen Shot 2022-03-03 at 9 18 07 AM](https://user-images.githubusercontent.com/98920165/156582829-818fd244-4866-4643-a03a-75e587ecf96c.png)
 
 
-Thanks for looking at my code for Tamagotchi! To Play the game, you can go to *insert website*
+Thanks for looking at my code for Tamagotchi! To Play the game, you can go to *https://alana2022.github.io/AlanasProject0/*
 
-Say hello to your new tamagotchi pet. You can name your pet any name you like. Hungry, sleepiness, bordeom. These points range from 0-10. 10 being the lowest which can cause you to have to start over and 0 being the highest which will make your Tamagotchi grow and be happy. As your pet grows your pets age will increase.
+Say hello to your new tamagotchi pet. You can name your pet any name you like. Hungry, sleepiness, bordeom. These points range from 0-10. 10 being the lowest which can cause you to have to start over and 0 being the highest which will make your Tamagotchi grow and be happy. As your pet grows your pets age will increase. If you neglect your pet your pet will die and you will need to start over.
 
 *Name your pet
 
@@ -11,11 +11,10 @@ Say hello to your new tamagotchi pet. You can name your pet any name you like. H
 
 *Feed the tamagotchi 
 
-*Clean the tamagotchi
+*Make sure your tamagotchi gets sleep
 
-*Play with the tamagotchi
+*Play with the tamagotchi so your pet doesn't get bored
 
-*Turn off the lights
 
 
                 *Tamagotchis mood points*
@@ -63,7 +62,7 @@ Everyone will get a chance to **be creative**, and work through some really **to
 **You will be working individually for this project**, but we'll be guiding you along the process and helping as you go. Show us what you've got! -->
 
 
----
+<!-- ---
 
 ### Technical Requirements
 
@@ -125,7 +124,7 @@ Your app must:
 * Instantiate your Tamagotchi
 * Display a character of your choice on the screen to represent your pet
 * Display the following metrics for your pet: 
- * Hunger (1-10 scale)
+ * Hunger  (1-10 scale)
  * Sleepiness (1-10 scale)
  * Boredom (1-10 scale)
  * Age
@@ -142,4 +141,4 @@ Your app must:
 * Have your tamagotchi give birth to baby tamagotchi...
 * ...with special powers (extend the class)!
 * Add an `excercise()` method to your tamagotchi, that affects certain properties
-* Add anything you can think of... use your imagination!
+* Add anything you can think of... use your imagination! -->
