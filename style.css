@@ -3,6 +3,14 @@
 
 } */
 
+#pet-name {
+    font-size: 23px;
+    border: 5px solid greenyellow;
+    border-radius: 12px;
+    background-color: greenyellow;
+    margin-bottom: 15px;
+}
+
 body {
     background-color: bisque;
     align-items: center;
