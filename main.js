@@ -11,7 +11,9 @@ class Tamagotchi {
     }
 }
 let Abby = new Tamagotchi("Abby");
-// console.log("Abby");
+
+console.log("Abby");
+
 
 // //Increase your pet's age every x minutes
 // Increase your pet's Hunger, Sleepiness, and Bored metrics on an interval of your choosing.
