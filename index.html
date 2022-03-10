@@ -16,37 +16,35 @@
 <body>
     <img src="https://tamagotchi.com/wp-content/uploads/violetchi.jpg" alt="tamagotchi pet"/>
     
-    <h1>Meet Your New Tamagotchi Pet</h1>
+    <h1>Name Your New Tamagotchi Pet</h1>
     <h1 id="showName">Your Name Appears here.</h1>
-
-
-
-
 
     <form
         id="petName" class="form" onSubmit="nameSubmit(event)">
         <label form="petName">Name:</label>
         <input type="text" name="petName" id="petName">
-        <button type="submit">I'm so excited to meet you!</button>
+        <button type="submit">Submit</button>
         
     </form>
 
-    <button id="btn-start">Start</button>
 
     <div class="rank">
+        <button id="start">Start</button>
         <p id="age">Age: 0</p>
         <p id="hungry">Hunger: 1</p>
         <p id="sleepy">Sleepiness: 1</p>
-        <p id="bord">Boredom: 1</p>
+        <p id="bored">Boredom: 1</p>
     </div>
 
     <div>
-    <button id="btn-hunger">Feed Me</button>
-    <button id="btn-sleepiness">Put Me To Sleep</button>
-    <button id="btn-boredom">Play With Me</button>
-    <button id="btn-lights On">Lights</button>
+    <button id="btn-hunger">hunger</button>
+    <button id="btn-sleepiness">sleepiness</button>
+    <button id="btn-boredom">boredom</button>
     
     </div>
+
+    <div id="survived">Survived</div>
+
 
     <footer>
         <a

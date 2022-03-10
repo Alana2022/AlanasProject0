@@ -1,47 +1,110 @@
 
  //below I am creating a Class for the tamagotchi and then I will instantiate passingin the name as "Abby" and console log to verify that my code my printed correctly.  
  //The metrics for hunger, sleepiness and boredom will start at 1.
-class Tamagotchi {
-    constructor(name) {
-        this.name = name;
-        this.age = 0;
-        this.hunger= 1;
-        this.sleepiness= 1;
-        this.boredom= 1;
-    }
-}
-//I am adding the method query selctor to identify the elements in my HTML
-const btnStart = document.querySelector("start");
-const btnHunger = document.querySelector("hunger");
-const btnSleepiness = document.querySelector("sleepiness");
-const btnBoredom = document.querySelector("boredom");
-const btnLights = document.querySelector("lights");
+// class Tamagotchi {
+//     constructor(name) {
+//         this.name = name;
+//         this.age = 0;
+//         this.hunger= 1;
+//         this.sleepiness= 1;
+//         this.boredom= 1;
+//     }
+// }
+
+const startEl = document.getElementById("start");
+const hungerEl = document.getElementById("btn-hunger");
+const sleepinessEl = document.getElementById("btn-sleepiness");
+const boredomEl = document.getElementById("btn-boredom");
+const petSurvived = document.getElementById("survived")
+const feed = document.getElementById("hungry");
+const tired = document.getElementById("sleepy")
+const weary = document.getElementById("bored");
+
+
+// hungerCount();
+// sleepCount();
+// bordedomCount();
+// ageCount();
+
+let hungry = 1;
+let sleepy = 1;
+let bored = 1;
+let age = 0;
+
+let startCounter = null;
+let hungerCounter = null;
+let sleepinessCounter = null;
+let boredomCounter = null;
+let ageCounter = null;
+
+
+function startCount(){
+    startCounter = setInterval(function () {
+        hungry++;
+        sleepy++;
+        bored++;
+        feed.innerText = "Hunger: " + hungry;
+        if (hungry === 10)
+        petSurvived.innerText = "Your pet Starved to death";
+
+        tired.innerText = "Sleepiness: " + sleepy;
+        if (sleepy === 10)
+        petSurvived.innerText = "Your pet Starved to death";
+
+        weary.innerText = "Boredom: " + bored;
+        if (bored === 10)
+        petSurvived.innerText = "Your pet Starved to death";
+      
+        // clearInterval(hungerCounter);
+//     console.log(count);
+    }, 1000);
+};    
+
+function hungerCount(){
+    // hungerCounter = setInterval(function () {
+        hungry--;
+        feed.innerText = "Hunger: " + hungry;
+        // if (hungry == 10)
+        // petSurvived.innerText = "Your pet Starved to death";
+};      
+        
+
+
+//adding an event listener and passing click to the function
+startEl.addEventListener('click', startCount);
+hungerEl.addEventListener('click', hungerCount);
+
+// sleepinessEl.addEventListener('click', sleepinessCount);
+// boredomEl.addEventListener('click', boredomCount);
+// lightsEl.addEventListener('click', lightsCount);
+
+
+
+// lightsBtn.addEventListener("click", (event) => {
+//     console.log("you clicked me")
+// })
+// hungerButton.addEventListener("click", (event) => {
+// console.log("you clicked me")
+
+// });
+
 
 
 // this code will add the ability to name the pet.
 const nameSubmit = (event) => {
     event.preventDefault()
-    console.log(event.target.petName.value) 
+    // console.log(event.target.petName.value) 
 
+    //this will access the DOM element id of the HTML
     document.getElementById("showName").innerHTML = event.target.petName.value
 }
 
-
-
+//adding in functionality for the each button to click
 
 // //Increase your pet's age every x minutes
 // Increase your pet's Hunger, Sleepiness, and Bored metrics on an interval of your choosing.
 // You pet should die if Hunger, Boredom, or Sleepiness hits 
     
-// this variable will connect the DOM elements from HTML
-// const countEl = document.getElementById("my-count");
-// const startEl = document.getElementById("btn-start");
-// const stopEl = document.getElementById("btn-stop");
-// const hungerEl = document.getElementById("btn-hunger");
-// const sleepinessEl = document.getElementById("btn-sleepiness");
-// const boredomEl = document.getElementById("btn-boredom");
-// const lightsEl = document.getElementById("btn-lights");
-// const age = document.getElementById("age");
 
 
 // let ageCounter = null;
@@ -59,17 +122,7 @@ const nameSubmit = (event) => {
 //     },3000);
 // }
 
-// let count = 0;
-// let myCounter = null;
 
-// function handleStartClick(){
-//     myCounter = setInterval(function(){
-//         count++;
-//         countEl.innerText = "Count: " + count;
-
-// //     console.log(count);
-//     }, 1000);
-// };
 
 // // adding on click listeners to each element will enable the user to be able to click the 
 // //button. The start button will start the count from 0
@@ -131,8 +184,21 @@ const nameSubmit = (event) => {
 //         e.preventDefault();
 // });
 
-// console.log(petName)
 
+//defining methods for the tamagotchi
+
+//     hungerTamagotchi() {
+//         this.hunger--
+//     }
+
+//     sleepinessTamagotchi() {
+//         this.sleepiness - 5
+//     }
+
+//     boredomTamagotchi() {
+//         this.bordeom--
+//     }
+// }
 
 
 
