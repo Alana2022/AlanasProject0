@@ -44,15 +44,16 @@ function startCount(){
         sleepy++;
         bored++;
         feed.innerText = "Hunger: " + hungry;
-        if (hungry === 10)
+        if (hungry == 10)
+        clearInterval(startCounter);
         petSurvived.innerText = "Your pet Starved to death";
 
         tired.innerText = "Sleepiness: " + sleepy;
-        if (sleepy === 10)
+        if (sleepy == 10)
         petSurvived.innerText = "Your pet Starved to death";
 
         weary.innerText = "Boredom: " + bored;
-        if (bored === 10)
+        if (bored == 10)
         petSurvived.innerText = "Your pet Starved to death";
       
         // clearInterval(hungerCounter);
@@ -68,16 +69,25 @@ function hungerCount(){
         // petSurvived.innerText = "Your pet Starved to death";
 };      
         
+function sleepinessCount(){
+    // sleepinessCounter = setInterval(function () {
+        sleepy--;
+        tired.innerText = "Sleepiness: " + sleepy;
 
+};
+
+function boredomCount(){
+    // boredomCounter = setInterval(function () {
+        bored--;
+        weary.innerText = "boredom: " + bored;
+
+};
 
 //adding an event listener and passing click to the function
 startEl.addEventListener('click', startCount);
 hungerEl.addEventListener('click', hungerCount);
-
-// sleepinessEl.addEventListener('click', sleepinessCount);
-// boredomEl.addEventListener('click', boredomCount);
-// lightsEl.addEventListener('click', lightsCount);
-
+sleepinessEl.addEventListener('click', sleepinessCount);
+boredomEl.addEventListener('click', boredomCount);
 
 
 // lightsBtn.addEventListener("click", (event) => {
@@ -88,8 +98,6 @@ hungerEl.addEventListener('click', hungerCount);
 
 // });
 
-
-
 // this code will add the ability to name the pet.
 const nameSubmit = (event) => {
     event.preventDefault()
@@ -97,7 +105,7 @@ const nameSubmit = (event) => {
 
     //this will access the DOM element id of the HTML
     document.getElementById("showName").innerHTML = event.target.petName.value
-}
+};
 
 //adding in functionality for the each button to click
 
@@ -199,9 +207,4 @@ const nameSubmit = (event) => {
 //         this.bordeom--
 //     }
 // }
-
-
-
-
-
 
