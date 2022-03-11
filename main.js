@@ -19,6 +19,7 @@ const petSurvived = document.getElementById("survived")
 const feed = document.getElementById("hungry");
 const tired = document.getElementById("sleepy")
 const weary = document.getElementById("bored");
+const lifeTime = document.getElementById("age");
 
 
 // hungerCount();
@@ -39,27 +40,44 @@ let ageCounter = null;
 
 
 function startCount(){
+    startCounter = setInterval(function () {    
+        lifeTime.innerText = "Age: " + age;
+//         // if (age == 10)
+//         petSurvived.innerText = "Your Pet Starved to death";
+    }, 5000);
+
+};
+
+function startCount(){
     startCounter = setInterval(function () {
         hungry++;
         sleepy++;
         bored++;
+        // age++;
+
         feed.innerText = "Hunger: " + hungry;
         if (hungry == 10)
         clearInterval(startCounter);
-        petSurvived.innerText = "Your pet Starved to death";
+        // petSurvived.innerText = "Your pet Starved to death";
 
         tired.innerText = "Sleepiness: " + sleepy;
         if (sleepy == 10)
-        petSurvived.innerText = "Your pet Starved to death";
+        petSurvived.innerText = "Pet Went to Pet Heaven";
 
         weary.innerText = "Boredom: " + bored;
         if (bored == 10)
-        petSurvived.innerText = "Your pet Starved to death";
+        petSurvived.innerText = "Pet Went to Pet Heaven";
+
+        // lifeTime.innerText = "Age: " + age;
+        // if (age == 10)
+        // petSurvived.innerText = "Pet Went to Pet Heaven";
+
       
         // clearInterval(hungerCounter);
 //     console.log(count);
-    }, 1000);
+    }, 2000);
 };    
+
 
 function hungerCount(){
     // hungerCounter = setInterval(function () {
@@ -82,6 +100,16 @@ function boredomCount(){
         weary.innerText = "boredom: " + bored;
 
 };
+
+function ageCount() {
+    ageCounter = setInterval(function(){
+        age++;
+        lifeTime.innerText = "Age: " + age;
+        // if (hungry == 10 || bored == 10 || sleepy ==10) 
+        // clearInterval(ageCounter);
+
+    },3000);
+}
 
 //adding an event listener and passing click to the function
 startEl.addEventListener('click', startCount);
@@ -115,20 +143,11 @@ const nameSubmit = (event) => {
     
 
 
-// let ageCounter = null;
-// let agePet =
+
 
 // //this function will increase the pets age as it grows
 
-// function ageCount() {
-//     ageCounter = setInterval(function(){
-//         agePet++;
-//         age.innerText = "Age: " + agePet;
-//         if (hunger == 10 || bore == 10 || sleep ==10) {
 
-//         }
-//     },3000);
-// }
 
 
 
